@@ -65,6 +65,14 @@ a:active {
     color: unset;
 }
 
+a::after {
+    color: unset;
+}
+
+a:link {
+    color: unset;
+}
+
 a{
     text-decoration: none;
 }
@@ -117,6 +125,10 @@ a{
     line-height: 22px;
 }
 
+.descricao p {
+    margin-bottom: 10vh;
+}
+
 .descricao div {
     width: 60vw;
     height: 12vh;
@@ -133,4 +145,22 @@ a{
 .descricaoTela ion-icon {
     cursor: pointer;
     font-size: 20px;
+}
+
+.ajusta{
+    width: 65vw;
+}
+
+.imagemBonita{
+    display: flex;
+    position: fixed;
+    bottom: 10vh;
+    left: 28vw;
+
+    width: 70vw;
+    height: 80vh;
+}
+
+.escondido{
+    display: none;
 }
