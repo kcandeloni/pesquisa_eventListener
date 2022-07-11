@@ -40,6 +40,10 @@ body{
     box-shadow: 0 0 4px rgba(0, 0, 0);
 }
 
+.base div p{
+    word-break: break-all;
+}
+
 .base div{
     display: flex;
     align-items: baseline;
@@ -48,7 +52,7 @@ body{
 .icons{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 12px;
     font-size: 16px;
     height: 8vh;
 }
@@ -71,7 +75,7 @@ a{
 
 .menu{
     background-color: #1d2a35;
-    width: 20vw;
+    width: 28vw;
     height: 80vh;
     scroll-behavior: auto;
     overflow-y: scroll;
@@ -80,6 +84,7 @@ a{
 
 .menu li{
     font-size: 16px;
+    line-height: 18px;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -99,6 +104,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 
 .descricao{
@@ -106,11 +112,22 @@ a{
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    word-break: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.descricao div {
+    width: 60vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descricao h2{
     font-weight: 500;
+    font-size: 20px;
 }
 
 .descricaoTela ion-icon {
