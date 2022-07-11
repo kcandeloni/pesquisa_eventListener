@@ -112,3 +112,8 @@ a{
 .descricao h2{
     font-weight: 500;
 }
+
+.descricaoTela ion-icon {
+    cursor: pointer;
+    font-size: 20px;
+}

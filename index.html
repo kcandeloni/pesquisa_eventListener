@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/reset.css">
-    <link rel="stylesheet" href="/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <title>Event Listen</title>
 </head>
@@ -19,17 +18,17 @@
         
         <ul class="menu">
             <h3>Tópicos</h3>
-            <li>O que são eventos de mouse e teclado em JavaScript?</li>
-            <li>O que é um Event Listener e como adicioná-lo via JS?</li>
-            <li>O que é uma função de callback (utilizada no Event Listener)?</li>
-            <li>Qual a diferença de um Event Listener de atributos HTML (como onclick)?</li>
-            <li>O que é o objeto Event que é recebido na função de callback?</li>
-            <li>O que é Event Bubbling em JS?</li>
-            <li>O que faz a função event.stopPropagation?</li>
+            <li onclick="setaTopico(0);">O que são eventos de mouse e teclado em JavaScript?</li>
+            <li onclick="setaTopico(1);">O que é um Event Listener e como adicioná-lo via JS?</li>
+            <li onclick="setaTopico(2);">O que é uma função de callback (utilizada no Event Listener)?</li>
+            <li onclick="setaTopico(3);">Qual a diferença de um Event Listener de atributos HTML (como onclick)?</li>
+            <li onclick="setaTopico(4);">O que é o objeto Event que é recebido na função de callback?</li>
+            <li onclick="setaTopico(5);">O que é Event Bubbling em JS?</li>
+            <li onclick="setaTopico(6);">O que faz a função event.stopPropagation?</li>
         </ul>
 
         <div class="descricaoTela">
-            <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            <ion-icon name="chevron-back-circle-outline" onclick="anteriorTopico();"></ion-icon>
             <div class="descricao">
                 
                     <h2>O que são eventos de mouse e teclado em JavaScript?</h2>
@@ -44,7 +43,7 @@
                     <li>Um erro ocorrendo.</li></ul>
                
             </div>
-            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            <ion-icon name="chevron-forward-circle-outline" onclick="proximoTopico();"></ion-icon>
         </div>
 
     </div>
